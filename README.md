@@ -1,10 +1,10 @@
 # Author-to-django-web
-run commands in dj_client:
+run commands in dj_client root dir:
 ```
   pip install -r requirements.txt  
   python manage.py runserver  
 ``` 
-run commands in dj_server:
+run commands in dj_server root dir:
 ```
   pip install -r requirements.txt
   docker build -t dj_server .
