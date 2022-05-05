@@ -10,3 +10,4 @@ run commands in dj_server:
   docker build -t dj_server .
   docker run --rm -p 50051:50051 dj_server
 ```
+go to 127.0.0.1:8000 in browser
