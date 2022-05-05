@@ -1,0 +1,5 @@
+Django==3.2.13
+djangogrpcframework==0.2.1
+djangorestframework==3.13.1
+grpcio==1.46.0
+grpcio-tools==1.46.0

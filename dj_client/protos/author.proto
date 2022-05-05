@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package author;
+
+message AuthorRequest{}
+
+message AuthorResponse{
+  int64 id = 1;
+  string name = 2;
+  string surname = 3;
+}
+
+service AuthorService{
+  rpc GetAuthors(AuthorRequest) returns (stream AuthorResponse);
+}

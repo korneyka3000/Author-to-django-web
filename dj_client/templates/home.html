@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home for Author</title>
+</head>
+<body>
+Wanna save new Authors?
+<form action="{% url 'main' %}" method="POST">
+    {% csrf_token %}
+<p><button type="submit">
+    Get New Authors
+</button></p>
+    </form>
+{% for ins in arr %}
+    <p>Created new:
+    {{ ins.name }}
+    {{ ins.surname }}</p>
+{% endfor %}
+</body>
+</html>
